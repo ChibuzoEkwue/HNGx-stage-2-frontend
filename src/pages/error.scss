@@ -1,0 +1,17 @@
+.errorContainer {
+	position: relative;
+	.errorMessage {
+		width: 600px;
+		margin: 250px auto;
+		text-align: center;
+		h2 {
+			font-size: 3rem;
+			font-weight: 500;
+			margin-bottom: 50px;
+		}
+		h3 {
+            font-size: 1.2em;
+            font-weight: 300;
+		}
+	}
+}
