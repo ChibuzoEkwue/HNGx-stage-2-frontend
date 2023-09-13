@@ -52,3 +52,6 @@ where id holds the movies id.
 
 In the event an id is giving of which our api has no record of it would. This will throw an error that will be picked by the errorElement
 
+### Issues
+
+I did notice not all movies in the a backgound and poster images
