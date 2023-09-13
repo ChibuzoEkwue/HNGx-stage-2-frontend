@@ -15,13 +15,17 @@ VITE_API_KEY=your_api_key
 
 Movie box was built with react (vite) react router dom v6 for navigation sass for css axios to make http requests and react helmet sync for seo.
 
+## Api
+
+This project was built using [the movie database api](https://developer.themoviedb.org)
+
 ## Pages
 
 Movie box consist of three main pages.
 
 ### Home Page
 
-This page has the url path / it basically consist of two componets the featured component that shows you the featured movie and the featured movies components that shows you popular movies.
+This page  basically consist of two components the featured component that shows you the featured movie and the featured movies components that shows you popular movies.
 
 ### Search Page
 
@@ -33,7 +37,7 @@ http://localhost:5173/search?q=monkey%20king
 ```
 and is then used to search the for the movie
 
-### The Movie Details page
+### The Movie Details Page
 
 This shows us detailed movie informations. An example of this page path is show below
 
