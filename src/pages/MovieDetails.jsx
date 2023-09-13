@@ -61,7 +61,7 @@ const MovieDetails = () => {
 									className="fav"
 									style={{ backgroundColor: add ? "#FFCC70" : "#be123c" }}
 								>
-									+ Add To Favourite
+									{add ? "Remove From Favourite" : "+ Add To Favourite"}
 								</button>
 							</div>
 						</div>
