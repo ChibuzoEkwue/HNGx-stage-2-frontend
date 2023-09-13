@@ -1,6 +1,6 @@
 # Movie Box 
 
-To run clone this project locally run the following command
+To run clone this project run the following command
 
 
 ```bash
