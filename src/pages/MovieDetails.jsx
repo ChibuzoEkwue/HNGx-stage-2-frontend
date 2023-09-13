@@ -1,10 +1,11 @@
 import "./movieDetails.scss";
 import axios from "axios";
+import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { json, useLoaderData } from "react-router-dom";
 
 const MovieDetails = () => {
-
+	const [add, setAdd] = useState(false);
 	const data = useLoaderData();
 
 	return (
@@ -49,9 +50,20 @@ const MovieDetails = () => {
 							<div className="desc" data-testid="movie-runtime">
 								{data.overview}
 							</div>
-							<button>
-								<img src="/Play.svg" /> <span>Watch trailer</span>
-							</button>
+							<div className="buttons">
+								<button>
+									<img src="/Play.svg" /> <span>Watch trailer</span>
+								</button>
+								<button
+									onClick={() => {
+										setAdd(!add);
+									}}
+									className="fav"
+									style={{ backgroundColor: add ? "#FFCC70" : "#be123c" }}
+								>
+									+ Add To Favourite
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -61,7 +73,6 @@ const MovieDetails = () => {
 };
 
 export default MovieDetails;
-
 
 export const loader = async ({ params }) => {
 	try {
